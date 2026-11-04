@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог отделочных материалов — МАРТдекор</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header"></div>
+
+<div class="wrap page-head">
+  <div class="crumbs"><a href="index.html">Главная</a> / Каталог</div>
+  <h1 id="catTitle" style="font-size:clamp(38px,5vw,60px)">Каталог материалов</h1>
+  <p class="lead">Цены&nbsp;— из&nbsp;каталога салона. Добавляйте в&nbsp;подборку всё, что&nbsp;нравится: менеджер проверит наличие и&nbsp;посчитает количество.</p>
+</div>
+<div class="wrap cat-layout">
+  <aside class="filters">
+    <h4>Направление</h4>
+    <div class="f-list" id="fDirs"></div>
+    <h4>Цена</h4>
+    <div class="f-list" id="fPrice">
+      <button data-p="all">Любая</button>
+      <button data-p="lo">до&nbsp;2&nbsp;000&nbsp;₽</button>
+      <button data-p="mid">2&nbsp;000 – 10&nbsp;000&nbsp;₽</button>
+      <button data-p="hi">от&nbsp;10&nbsp;000&nbsp;₽</button>
+    </div>
+  </aside>
+  <div>
+    <div class="cat-note"><i class="ti ti-bookmarks"></i><span><b>Подборка вместо корзины.</b> Оплата&nbsp;— после&nbsp;расчёта менеджера, когда&nbsp;наличие и&nbsp;количество подтверждены.</span></div>
+    <div class="toolbar">
+      <div class="search"><i class="ti ti-search"></i><input id="q" type="search" placeholder="Например: молдинг, мрамор, Orac"></div>
+      <select id="sort" aria-label="Сортировка"><option value="def">Сначала популярные</option><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select>
+      <span class="muted small" id="count"></span>
+    </div>
+    <div class="cards" id="catalogList"></div>
+    <div class="empty" id="empty">Ничего не&nbsp;нашлось. Напишите нам&nbsp;— подберём похожее: <a href="https://t.me/+79094200420">Telegram</a> или&nbsp;<a href="https://vk.ru/martdecoronline">ВКонтакте</a></div>
+    <div class="need small" style="margin-top:30px"><b>Для&nbsp;прототипа:</b> показана выборка по&nbsp;2–4 позиции на&nbsp;направление. Весь&nbsp;каталог салона переедет в&nbsp;новый сайт.</div>
+  </div>
+</div>
+
+<div id="footer"></div>
+<script src="js/typo.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

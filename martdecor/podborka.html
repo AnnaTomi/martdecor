@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Моя подборка — МАРТдекор</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header"></div>
+
+<div class="wrap page-head">
+  <div class="crumbs"><a href="index.html">Главная</a> / Моя подборка</div>
+  <h1 style="font-size:clamp(38px,5vw,60px)">Моя подборка</h1>
+  <p class="lead">Отправьте подборку менеджеру&nbsp;— проверим наличие, посчитаем количество на&nbsp;вашу комнату и&nbsp;пришлём итоговую сумму. Платить сейчас не&nbsp;нужно.</p>
+</div>
+<div class="wrap pick-grid">
+  <div>
+    <div class="pick-list" id="pickList"></div>
+    <div class="pick-empty" id="pickEmpty"><i class="ti ti-bookmarks"></i><h3>Подборка пока пустая</h3><p class="muted">Добавляйте товары из&nbsp;каталога или&nbsp;выберите готовый набор по&nbsp;стилю.</p><div class="btns" style="justify-content:center"><a class="btn btn-main" href="catalog.html">В&nbsp;каталог</a><a class="btn btn-line" href="index.html#stili">Готовые наборы</a></div></div>
+  </div>
+  <aside class="pick-side" id="pickSide">
+    <div class="small muted" id="pickCount"></div>
+    <div class="pick-total"><span>Примерно</span><b id="pickSum"></b></div>
+    <form data-demo="pick">
+      <input type="hidden" id="pickHidden">
+      <div class="field"><label for="pn">Имя</label><input id="pn" placeholder="Как к вам обращаться" required></div>
+      <div class="field"><label for="pp">Телефон для&nbsp;связи</label><input id="pp" placeholder="+7" required></div>
+      <div class="field"><label for="pa">Площадь или&nbsp;размеры комнаты</label><input id="pa" placeholder="Например: стена 4 × 2,7 м"></div>
+      <button class="btn btn-main" type="submit"><i class="ti ti-send"></i>Получить расчёт</button>
+      <ul class="ul-check small" style="margin:6px 0 0">
+        <li><i class="ti ti-check"></i>Ответим в&nbsp;течение 6 часов</li>
+        <li><i class="ti ti-check"></i>Проверим наличие и&nbsp;предложим замену</li>
+        <li><i class="ti ti-check"></i>Оплата&nbsp;— только после&nbsp;вашего «да»</li>
+      </ul>
+    </form>
+    <div class="thanks"><i class="ti ti-circle-check"></i><h3>Подборка у&nbsp;менеджера</h3><p class="muted">Это&nbsp;демо: в&nbsp;настоящем сайте список товаров придёт менеджеру в&nbsp;Telegram, а&nbsp;расчёт&nbsp;— вам в&nbsp;мессенджер.</p></div>
+  </aside>
+</div>
+
+<div id="footer"></div>
+<script src="js/typo.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

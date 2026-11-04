@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Направление — МАРТдекор</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header"></div>
+
+<div class="wrap page-head" id="dirPage" style="padding-bottom:0"></div>
+
+<section class="bg-paper">
+  <div class="wrap">
+    <div class="head-row"><div><div class="eyebrow">Цены из&nbsp;каталога салона</div><h2 id="dirTitle">Популярное</h2></div><a class="btn btn-line" href="catalog.html">Весь&nbsp;каталог</a></div>
+    <div class="cards" id="dirItems"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Как&nbsp;выбрать без&nbsp;ошибок</div>
+    <h2>Три вещи, которые мы&nbsp;сделаем за&nbsp;вас</h2>
+    <div class="tips" style="margin-top:32px">
+      <div class="reveal"><i class="ti ti-ruler-measure"></i><h3>Посчитаем количество</h3><p>С&nbsp;запасом, раппортом и&nbsp;подрезкой&nbsp;— чтобы&nbsp;не&nbsp;докупать из&nbsp;другой партии.</p></div>
+      <div class="reveal"><i class="ti ti-palette"></i><h3>Подберём сочетания</h3><p>Лепнина, панели, обои и&nbsp;краска из&nbsp;одной подборки&nbsp;— оттенки совпадут.</p></div>
+      <div class="reveal"><i class="ti ti-home-move"></i><h3>Дадим примерить</h3><p>Образцы можно посмотреть в&nbsp;салоне или&nbsp;взять на&nbsp;объект.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <div class="eyebrow">Бренды в&nbsp;салоне</div>
+    <h2>С&nbsp;кем работаем</h2>
+    <div class="brands" id="dirBrands" style="margin-top:26px"></div>
+    <p class="src-note" id="dirSrc"></p>
+  </div>
+</section>
+
+<section id="dirForm">
+  <div class="wrap">
+    <div class="form-box">
+      <div>
+        <div class="eyebrow">Помощь с&nbsp;выбором</div>
+        <h2>Пришлите фото&nbsp;— подберём под&nbsp;вашу комнату</h2>
+        <ol class="form-steps">
+          <li>Прикрепите фото комнаты, картинку или&nbsp;дизайн-проект, если&nbsp;есть</li>
+          <li>Менеджер подберёт варианты под&nbsp;ваш&nbsp;бюджет и&nbsp;проверит наличие</li>
+          <li>Пришлём подборку с&nbsp;ценами за&nbsp;6 часов</li>
+        </ol>
+      </div>
+      <div>
+        <form data-demo="podbor">
+          <div class="field"><label for="n">Имя</label><input id="n" placeholder="Как к вам обращаться" required></div>
+          <div class="field"><label for="p">Телефон для&nbsp;связи</label><input id="p" placeholder="+7" required></div>
+          <label class="file"><input type="file"><i class="ti ti-camera-plus"></i> <span>Прикрепить фото комнаты или&nbsp;картинку</span></label>
+          <button class="btn btn-main" type="submit">Подобрать материалы</button>
+          <p class="small muted" style="margin:0">Нажимая кнопку, вы&nbsp;соглашаетесь с&nbsp;обработкой персональных данных.</p>
+        </form>
+        <div class="thanks"><i class="ti ti-circle-check"></i><h3>Спасибо! Фото у&nbsp;нас</h3><p class="muted">Это&nbsp;демо: в&nbsp;настоящем сайте заявка придёт менеджеру в&nbsp;Telegram.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-paper">
+  <div class="wrap">
+    <div class="head-row"><div><div class="eyebrow">Всё для&nbsp;стен в&nbsp;одном месте</div><h2>Другие направления</h2></div></div>
+    <div class="dirs" id="dirOther"></div>
+  </div>
+</section>
+
+<div id="footer"></div>
+<script src="js/typo.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
